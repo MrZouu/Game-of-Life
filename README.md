@@ -19,9 +19,9 @@ The set of rules described by Conway are summarized as:
 
 ## Project
 Our project is divided into two parts.
-In part A, named "Implementing Evolution", we will focus on implementing the rules needed to evolve the world from
+* In part A, named "Implementing Evolution", we will focus on implementing the rules needed to evolve the world from
 one generation to the next.
-In part B, named "The World in a File", we will modify the code so that the initial state of the world can be read from a file, and the final state is output to a file.
+* In part B, named "The World in a File", we will modify the code so that the initial state of the world can be read from a file, and the final state is output to a file.
 
 #  Credits
 * [**MrZouu**](https://github.com/MrZouu) : Co-creator of the project.
