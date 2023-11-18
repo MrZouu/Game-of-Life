@@ -23,6 +23,12 @@ Our project is divided into two parts.
 one generation to the next.
 * In part B, named "The World in a File", we will modify the code so that the initial state of the world can be read from a file, and the final state is output to a file.
 
+## Resources
+* the header file, lifegame.h was given.
+* lifegame.c was to be partially completed
+* lab1a.c and lab1b.c contained empty functions that had to be completed
+* the text file glider.txt was also given 
+
 #  Credits
 * [**MrZouu**](https://github.com/MrZouu) : Co-creator of the project.
 * [**Corentin Hu**](https://github.com/cohru) : Co-creator of the project.
