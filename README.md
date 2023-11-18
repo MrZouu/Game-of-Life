@@ -18,13 +18,13 @@ The set of rules described by Conway are summarized as:
 4. A dead cell will become alive if it has exactly three living neighbors.
 
 ## Project
-Notre projet est divisé en deux parties. 
+Our project is divided into two parts.
 In part A, named "Implementing Evolution", we will focus on implementing the rules needed to evolve the world from
 one generation to the next.
 In part B, named "The World in a File", we will modify the code so that the initial state of the world can be read from a file, and the final state is output to a file.
 
 #  Credits
 * [**MrZouu**](https://github.com/MrZouu) : Co-creator of the project.
+* [**Corentin Hu**](https://github.com/cohru) : Co-creator of the project.
 * [**Sc0pziion**](https://github.com/sc0pziion) : Co-creator of the project.
 * [**Clement Auray**](https://github.com/Clementauray) : Co-creator of the project.
-* [**Corentin Hu**](https://github.com/cohru) : Co-creator of the project.
