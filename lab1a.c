@@ -67,21 +67,26 @@ void next_generation(void) {
 		}
 	}
 
+	//finalize_evolution();
 }
 
 int get_next_state(int x, int y) {
-	int n_state=0;
-	n_state=num_neighbors(x,y);
-	if (n_state==3 || n_state==2){
-		return ALIVE;
-	}
-	else if (n_state==3 && get_cell_state(x,y)==DEAD){
-		return ALIVE;
-	}	
-	else{
-		return DEAD;
-	}
-	
+    int n_state = num_neighbors(x, y);
+    int current_state = get_cell_state(x, y);
+
+    if (current_state == ALIVE) {
+        if (n_state == 2 || n_state == 3) {
+            return ALIVE;
+        } else {
+            return DEAD;
+        }
+    } else {
+        if (n_state == 3) {
+            return ALIVE;
+        } else {
+            return DEAD;
+        }
+    }
 	/* TODO: for the specified cell, compute the state in
 	   the next generation using the rules
 
@@ -89,18 +94,22 @@ int get_next_state(int x, int y) {
 	   neighbors */
 }
 
+
+
 int num_neighbors(int x, int y) {
 	/* TODO: for the specified cell, return the number of
 	   neighbors that are ALIVE
 
 	   Use get_cell_state(x,y) */
-	int n_state=0;
-	for (int i=x-1;i<x+1;i++){
-		for (int j=y-1;j<y+1;j++){
-			if (get_cell_state(i,j)==ALIVE){
-				n_state++;
-			}
-		}
-	}
-	return n_state;
+    int n_state = 0;
+    
+    for (int i = x - 1; i <= x + 1; i++) {
+        for (int j = y - 1; j <= y + 1; j++) {
+            if ((i != x || j != y) && get_cell_state(i, j) == ALIVE) {
+                n_state++;
+            }
+        }
+    }
+
+    return n_state;
 }
